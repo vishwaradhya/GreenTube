@@ -7,7 +7,7 @@ public class ConfigurationPath {
 	
 	public static final String WINDOWS_DRIVER_PATH = "\\src\\main\\resources\\Windows\\";
 	
-	public static final String LINUX_DRIVER_PATH = "\\src\\main\\resources\\Linux\\";
+	public static final String LINUX_DRIVER_PATH = "/src/main/resources/Linux/";
 	
 	
 }

@@ -6,7 +6,10 @@ import java.util.Map;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.junit.AfterClass;
+import org.testng.annotations.AfterSuite;
 
+import com.framework.actions.BaseAbstract;
 import com.framework.actions.ScreenShotMethods;
 import com.framework.commonutils.PropertiesFile;
 import com.framework.initialization.ConfigurationPath;
@@ -47,7 +50,9 @@ public class Hooks extends DriverInitalization {
 
 			takeScreenShotObj.takeScreenShot();
 		}
-		closeDriver();
+		//closeDriver();
 
 	}
+	
+
 }
