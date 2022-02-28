@@ -15,7 +15,7 @@ import com.jayway.restassured.RestAssured;
  *
  */
 
-public class RestImpl implements RestClient {
+public class RestImpl {
 
 	Response response;
 	private static Logger logger = LogManager.getLogger(RestImpl.class);

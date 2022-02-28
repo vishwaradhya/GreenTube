@@ -7,7 +7,6 @@ import java.util.Map;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import com.framework.actions.BaseAbstract;
 import com.framework.actions.ScreenShotMethods;
 import com.framework.commonutils.PropertiesFile;
 import com.framework.initialization.ConfigurationPath;
@@ -18,7 +17,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class Hooks extends BaseAbstract {
+public class Hooks extends DriverInitalization {
 
 	private static Logger logger = LogManager.getLogger(Hooks.class);
 
@@ -48,7 +47,7 @@ public class Hooks extends BaseAbstract {
 
 			takeScreenShotObj.takeScreenShot();
 		}
-		//closeDriver();
+		closeDriver();
 
 	}
 }

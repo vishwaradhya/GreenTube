@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.framework.commonutils.Paths;
+import com.framework.commonutils.EndPoints;
 import com.framework.commonutils.PropertiesFile;
 import com.framework.commonutils.UserDataPath;
 import com.framework.rest.RestImpl;
@@ -34,7 +34,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 
 			coordinates.append(row.get("longitude-latitude"));
 		}
-		httpResponse = getRequestWithQueryParams(BASE_URL, coordinates + Paths.PIN_MAP, query);
+		httpResponse = getRequestWithQueryParams(BASE_URL, coordinates + EndPoints.PIN_MAP, query);
 	}
 
 	@When("^user updates maps by following values$")
@@ -45,7 +45,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 			coordinates.append(row.get("longitude-latitude"));
 		}
 
-		httpResponse = getRequestWithQueryParams(BASE_URL, coordinates + Paths.PIN_MAP, query);
+		httpResponse = getRequestWithQueryParams(BASE_URL, coordinates + EndPoints.PIN_MAP, query);
 
 	}
 
@@ -58,7 +58,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 		}
 		query.put("apiKey", PropertiesFile.getPropertyValue(UserDataPath.USER_DATA_PATH, "APP_INVALID_KEY"));
 
-		httpResponse = getRequestWithQueryParams(BASE_URL, Paths.MAPS_GET, query);
+		httpResponse = getRequestWithQueryParams(BASE_URL, EndPoints.MAPS_GET, query);
 	}
 
 	
@@ -71,7 +71,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 		}
 
 		query.put("apiKey", PropertiesFile.getPropertyValue(UserDataPath.USER_DATA_PATH, "APP_KEY"));
-		httpResponse = getRequestWithQueryParams(PropertiesFile.getPropertyValue(UserDataPath.USER_DATA_PATH, "BASE_URL_INVALID"), coordinates + Paths.PIN_MAP, query);
+		httpResponse = getRequestWithQueryParams(PropertiesFile.getPropertyValue(UserDataPath.USER_DATA_PATH, "BASE_URL_INVALID"), coordinates + EndPoints.PIN_MAP, query);
 	}
 	
 	@Given("^user verifies the status code (\\d+)$")

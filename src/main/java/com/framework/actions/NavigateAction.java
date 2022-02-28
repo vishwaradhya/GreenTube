@@ -1,6 +1,8 @@
 package com.framework.actions;
 
-public class NavigateAction extends BaseAbstract {
+import com.framework.initialization.DriverInitalization;
+
+public class NavigateAction extends DriverInitalization {
 
 	/**
 	 * Method to launch url

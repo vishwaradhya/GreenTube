@@ -2,7 +2,7 @@ package com.framework.actions;
 
 import com.ui.pages.GreenTubeHomePage;
 
-public interface CommonInteface {
+public interface AllPageObjects {
 
 	NavigateAction navigateObj = new NavigateAction();
 

@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(plugin = { "html:target/cucumberHtmlReport", "json:target/cucumber.json",
 		"pretty:target/cucumber-pretty.txt", "usage:target/cucumber-usage.json" },
 		// pretty:target/cucumber-json-report.json
-		features = "classpath:features", glue = { "com.ui.stepdefinitions","com.rest.stepdefinitions" }, tags = { "@addAndRemoveCart" })
+		features = "classpath:features", glue = { "com.ui.stepdefinitions","com.rest.stepdefinitions" }, tags = { "@GreenTubeRest,@GreenTubeUI" })
 
 public class Runner {
 	

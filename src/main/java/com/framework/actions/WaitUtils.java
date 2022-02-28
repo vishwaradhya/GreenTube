@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class WaitUtils extends BaseAbstract {
+import com.framework.initialization.DriverInitalization;
+
+public class WaitUtils extends DriverInitalization {
 
 
 	public void waitForVisibility(WebElement element) {
