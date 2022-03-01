@@ -29,7 +29,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 	@Given("^user get the maps with pin for following places$")
 	public void addDetails(DataTable dataTable) {
 
-		StringBuffer coordinates = new StringBuffer();
+		StringBuilder coordinates = new StringBuilder();
 		for (final Map<String, String> row : dataTable.asMaps(String.class, String.class)) {
 
 			coordinates.append(row.get("longitude-latitude"));
@@ -40,7 +40,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 	@When("^user updates maps by following values$")
 	public void updateValues(DataTable dataTable) {
 
-		StringBuffer coordinates = new StringBuffer();
+		StringBuilder coordinates = new StringBuilder();
 		for (final Map<String, String> row : dataTable.asMaps(String.class, String.class)) {
 			coordinates.append(row.get("longitude-latitude"));
 		}
@@ -52,7 +52,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 	@Given("^user get the maps with invalid API KEY with following valid details$")
 	public void invalidApiKey(DataTable dataTable) {
 
-		StringBuffer coordinates = new StringBuffer();
+		StringBuilder coordinates = new StringBuilder();
 		for (final Map<String, String> row : dataTable.asMaps(String.class, String.class)) {
 			coordinates.append(row.get("longitude-latitude"));
 		}
@@ -65,7 +65,7 @@ public class GreenTubeRestStepDefinitions extends RestImpl {
 	@Given("^user get the maps with invalid base url with following valid details$")
 	public void invalidBaseUrl(DataTable dataTable) {
 	   
-		StringBuffer coordinates = new StringBuffer();
+		StringBuilder coordinates = new StringBuilder();
 		for (final Map<String, String> row : dataTable.asMaps(String.class, String.class)) {
 			coordinates.append(row.get("longitude-latitude"));
 		}

@@ -47,7 +47,7 @@ public class GreenTubeStepDefinitions implements AllPageObjects {
 	}
 
 	@Then("^user verifies item added sucessfully$")
-	public void verifyItem() throws Throwable {
+	public void verifyItem() {
 		greenTubehomePageObj.verifyItemsAdded();
 	}
 	
@@ -87,12 +87,8 @@ public class GreenTubeStepDefinitions implements AllPageObjects {
 	}
 
 	@When("^user proceed to checkout$")
-	public void checkout() throws Throwable {
+	public void checkout() throws InterruptedException {
 		greenTubehomePageObj.checkout();
 	}
 
-	@When("^user select Proceed to checkout option and agree the condition$")
-	public void proccedToCheckout() throws InterruptedException {
-
-	}
 }

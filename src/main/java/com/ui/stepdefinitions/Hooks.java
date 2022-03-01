@@ -6,15 +6,12 @@ import java.util.Map;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.junit.AfterClass;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 
-import com.framework.actions.BaseAbstract;
 import com.framework.actions.ScreenShotMethods;
 import com.framework.commonutils.PropertiesFile;
 import com.framework.initialization.ConfigurationPath;
 import com.framework.initialization.DriverInitalization;
-//import com.rest.utils.MakePostsUtils;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -54,5 +51,4 @@ public class Hooks extends DriverInitalization {
 
 	}
 	
-
 }

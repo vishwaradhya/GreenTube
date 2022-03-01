@@ -8,7 +8,6 @@ import com.framework.actions.BasicActions;
 import com.framework.actions.WaitUtils;
 import com.framework.commonutils.PropertiesFile;
 import com.framework.commonutils.UserDataPath;
-import com.framework.initialization.ConfigurationPath;
 import com.framework.initialization.DriverInitalization;
 
 import org.apache.log4j.Logger;
